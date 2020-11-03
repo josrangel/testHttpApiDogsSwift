@@ -13,7 +13,20 @@
 		3071528B2551B15300BC8ADB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 307152892551B15300BC8ADB /* Main.storyboard */; };
 		3071528D2551B15700BC8ADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3071528C2551B15700BC8ADB /* Assets.xcassets */; };
 		307152902551B15700BC8ADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3071528E2551B15700BC8ADB /* LaunchScreen.storyboard */; };
+		3071529F2551B25A00BC8ADB /* AsynchronousTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071529E2551B25A00BC8ADB /* AsynchronousTestCase.swift */; };
+		307152AB2551B39A00BC8ADB /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307152AA2551B39A00BC8ADB /* Dog.swift */; };
+		307152AF2551DF4600BC8ADB /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307152AE2551DF4600BC8ADB /* DependencyInjection.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		307152A12551B25A00BC8ADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 307152782551B15300BC8ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3071527F2551B15300BC8ADB;
+			remoteInfo = httpApiDogs;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		307152802551B15300BC8ADB /* httpApiDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = httpApiDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,22 @@
 		3071528C2551B15700BC8ADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3071528F2551B15700BC8ADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		307152912551B15700BC8ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3071529C2551B25A00BC8ADB /* httpApiDogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = httpApiDogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3071529E2551B25A00BC8ADB /* AsynchronousTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTestCase.swift; sourceTree = "<group>"; };
+		307152A02551B25A00BC8ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		307152AA2551B39A00BC8ADB /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		307152AE2551DF4600BC8ADB /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3071527D2551B15300BC8ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307152992551B25A00BC8ADB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				307152822551B15300BC8ADB /* httpApiDogs */,
+				3071529D2551B25A00BC8ADB /* httpApiDogsTests */,
 				307152812551B15300BC8ADB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				307152802551B15300BC8ADB /* httpApiDogs.app */,
+				3071529C2551B25A00BC8ADB /* httpApiDogsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +90,19 @@
 				3071528C2551B15700BC8ADB /* Assets.xcassets */,
 				3071528E2551B15700BC8ADB /* LaunchScreen.storyboard */,
 				307152912551B15700BC8ADB /* Info.plist */,
+				307152AA2551B39A00BC8ADB /* Dog.swift */,
+				307152AE2551DF4600BC8ADB /* DependencyInjection.swift */,
 			);
 			path = httpApiDogs;
+			sourceTree = "<group>";
+		};
+		3071529D2551B25A00BC8ADB /* httpApiDogsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3071529E2551B25A00BC8ADB /* AsynchronousTestCase.swift */,
+				307152A02551B25A00BC8ADB /* Info.plist */,
+			);
+			path = httpApiDogsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +125,24 @@
 			productReference = 307152802551B15300BC8ADB /* httpApiDogs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3071529B2551B25A00BC8ADB /* httpApiDogsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 307152A32551B25A00BC8ADB /* Build configuration list for PBXNativeTarget "httpApiDogsTests" */;
+			buildPhases = (
+				307152982551B25A00BC8ADB /* Sources */,
+				307152992551B25A00BC8ADB /* Frameworks */,
+				3071529A2551B25A00BC8ADB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				307152A22551B25A00BC8ADB /* PBXTargetDependency */,
+			);
+			name = httpApiDogsTests;
+			productName = httpApiDogsTests;
+			productReference = 3071529C2551B25A00BC8ADB /* httpApiDogsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +154,10 @@
 				TargetAttributes = {
 					3071527F2551B15300BC8ADB = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					3071529B2551B25A00BC8ADB = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 3071527F2551B15300BC8ADB;
 					};
 				};
 			};
@@ -115,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				3071527F2551B15300BC8ADB /* httpApiDogs */,
+				3071529B2551B25A00BC8ADB /* httpApiDogsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +191,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3071529A2551B25A00BC8ADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,11 +207,29 @@
 			files = (
 				307152882551B15300BC8ADB /* ViewController.swift in Sources */,
 				307152842551B15300BC8ADB /* AppDelegate.swift in Sources */,
+				307152AB2551B39A00BC8ADB /* Dog.swift in Sources */,
 				307152862551B15300BC8ADB /* SceneDelegate.swift in Sources */,
+				307152AF2551DF4600BC8ADB /* DependencyInjection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		307152982551B25A00BC8ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3071529F2551B25A00BC8ADB /* AsynchronousTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		307152A22551B25A00BC8ADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3071527F2551B15300BC8ADB /* httpApiDogs */;
+			targetProxy = 307152A12551B25A00BC8ADB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		307152892551B15300BC8ADB /* Main.storyboard */ = {
@@ -317,6 +403,44 @@
 			};
 			name = Release;
 		};
+		307152A42551B25A00BC8ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = httpApiDogsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josrangel.httpApiDogsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/httpApiDogs.app/httpApiDogs";
+			};
+			name = Debug;
+		};
+		307152A52551B25A00BC8ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = httpApiDogsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.josrangel.httpApiDogsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/httpApiDogs.app/httpApiDogs";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +458,15 @@
 			buildConfigurations = (
 				307152952551B15700BC8ADB /* Debug */,
 				307152962551B15700BC8ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		307152A32551B25A00BC8ADB /* Build configuration list for PBXNativeTarget "httpApiDogsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				307152A42551B25A00BC8ADB /* Debug */,
+				307152A52551B25A00BC8ADB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
